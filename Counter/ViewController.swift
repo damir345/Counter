@@ -19,13 +19,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var changesHistory: UITextView!
     
+    @IBOutlet weak var buttonClear: UIButton!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         buttonAdd.setTitle("+", for: .normal)
+        
         buttonRem.setTitle("-", for: .normal)
+        
         counter.text = "\(timesPressed)"
+        
+        buttonClear.setImage(UIImage(systemName: "eraser.fill"), for: .normal)
         
         
         // buttonTouch.setTitle("highlited", for: .highlighted )
